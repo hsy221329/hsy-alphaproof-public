@@ -11,7 +11,7 @@
 - 关于基座和训练的复用，结论是：
 	- 做小prover，基座能力最好的是Kimina 1.7B / 8B和V2-7B；复现alphaproof，逐步策略是StepProver / REAL 但其实能力都不咋样
 	- 本文列出的整篇生成模型中，miniF2F-test、pass@32：Kimina 72B报84.0%，V2-671B报82.4%；小模型Kimina 8B报77.86%、1.7B报76.63%，V2-7B报75.6%。
-		- 原版alphaproof在TTRL前，平均每题2 TPU分钟搜索为96.3%，12 TPU小时为97.7%。
+		- 原版alphaproo**f在TTRL前**，平均每题2 TPU分钟搜索为**96.3%**，12 TPU小时为97.7%。
 	- 训练方式：alphaproof式搜索—训练闭环看HTPS / nano；小prover看Kimina公开的GRPO、错误修复代码和V2的教师蒸馏方法。
 	- 具体测试集和预算见[[03_alphaproof_public_models#汇总比较：定位与测试|测试与跑分]]；matchmaker实现见[[03_alphaproof_public_models#match maker 是否还没有开源复现？|matchmaker专节]]。
 # AlphaProof 相关公开模型、复现机制与复用判断
