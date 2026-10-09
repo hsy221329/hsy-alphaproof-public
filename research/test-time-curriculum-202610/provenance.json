@@ -1,0 +1,84 @@
+{
+  "schema_version": 1,
+  "path_base": "Original experiment workspace root; all paths are relative identifiers, not public download links.",
+  "public_scope": "Curated aggregate evidence only. Local source files are not included in this pack.",
+  "verification_scope": "Recomputed source-file hashes and checked selected JSON arithmetic and source agreement locally. No new Lean verification or GPU execution performed for this release candidate.",
+  "audit_limitation": "Hashes identify the exact private source bytes; they do not independently validate omitted raw evidence or provide a complete reproduction package.",
+  "sources": [
+    {
+      "path": "experiments-2/01-2610/derived/student/TTRL_TRAJECTORY_INDEX_v11.json",
+      "sha256": "79f0a475e2f1be7c3c603e3048146a20635972eb47becd3ab5c6319ce020dc80",
+      "role": "Authoritative cumulative path aggregates, update counts, R8 recovery and R9 terminal course outcomes."
+    },
+    {
+      "path": "experiments-2/01-2610/derived/student/TTRL_TRAJECTORY_INDEX_v11.md",
+      "sha256": "f546b22bc5376e1570dfb37fe71358d65c7ae1dfb50d8f35c48989b63e24242e",
+      "role": "Human-readable snapshot and cost boundaries."
+    },
+    {
+      "path": "experiments-2/01-2610/config/model_identity.json",
+      "sha256": "4d139e709e89171dd08c9456886e63584a03dc8bfbba922a20580746fd9b5103",
+      "role": "Pinned model identity and upstream release-era Lean compatibility context only; its Lean 4.15 entry is not the actual experimental runtime."
+    },
+    {
+      "path": "experiments-2/01-2610/runs/hard-qualification-floor-128-v4_2/manifest.json",
+      "sha256": "639cabb1f8a9aeff71e9ed14f13c557354652f2ce36bc20bdc3593c15b443fbd",
+      "role": "Frozen baseline sampling settings and binding to the experimental Lean project."
+    },
+    {
+      "path": "experiments-2/01-2610/runs/hard-qualification-floor-128-v4_2/summary.json",
+      "sha256": "cbe88ee846e90e94fd68add367dc3e4c058a529691db1c4b1714727d9c64e7a1",
+      "role": "Baseline denominator, strict outcome, truncation and output tokens."
+    },
+    {
+      "path": "experiments-2/01-2610/runs/context-bridge/node1-v1/generate/summary.json",
+      "sha256": "9be4eb093e2542ba50ab5c078eecf8cea9cfddc56c611d1566a358b8d029183e",
+      "role": "Final search-only phase, path node1."
+    },
+    {
+      "path": "experiments-2/01-2610/runs/context-bridge/node2-v1/generate/summary.json",
+      "sha256": "fe04a5e2c34d2b25509d6d20cc4c0487c8493ec396aca78319d15b84bffa2f40",
+      "role": "Final search-only phase, path node2."
+    },
+    {
+      "path": "experiments-2/01-2610/derived/research_design/FLOOR_NODE1_R8_TO_R9_CONNECTED_PROGRESS_v1.md",
+      "sha256": "2aa42d7c8505f23d935e5f394796415ee256537bc6717873a4c765677015bf3c",
+      "role": "Semantic course descriptions and chronological milestone; intermediate report superseded by v11 for terminal counts."
+    },
+    {
+      "path": "experiments-2/01-2610/derived/research_design/VERIFIER_REVIEW_v1.md",
+      "sha256": "00322321ea740bc7dabf06f1ffc6a489ae5d3206a2860565297bc06a3126d21a",
+      "role": "Strict verifier acceptance design and limitations."
+    },
+    {
+      "path": "experiments-2/01-2610/runs/setup/20261008T050816Z/lean_receipt.json",
+      "sha256": "b21b7f944437cb1f20f376dbc80698cbe182cad569c2b80aa9e593930858821f",
+      "role": "Actual node1 Lean and Mathlib setup receipt; only runtime identity is published."
+    },
+    {
+      "path": "experiments-2/01-2610/runs/setup/node2/20261008T084859Z/setup/lean_receipt.json",
+      "sha256": "52f8b801974312e78813f115a0fbe0607e78b8d411cac952a2b171f8a132532b",
+      "role": "Actual node2 Lean and Mathlib setup receipt; only runtime identity is published."
+    },
+    {
+      "path": "experiments-2/01-2610/runs/hard-floor-R1repeat-node1-v4_3/round01/train/manifest.json",
+      "sha256": "9182e55e125694986975031eae9b1ce168dcd14bfdea6c9809167a5c8b5b0d5b",
+      "role": "Frozen actual training-stage configuration; supports LoRA settings and experimental Lean project binding."
+    },
+    {
+      "path": "experiments-2/01-2610/runs/hard-floor-D1-v4_3/round01/train/manifest.json",
+      "sha256": "c689b4ec3992c681525c5ca354bfff371679a2c5bf3ee1b18a88a82de0f8b423",
+      "role": "Frozen actual training-stage configuration; supports LoRA settings and experimental Lean project binding."
+    },
+    {
+      "path": "experiments-2/01-2610/runs/recovery/node1-connected-R8-import-v1/train/manifest.json",
+      "sha256": "e0a498ee12c6045ba6c4cac93dba257964833b2f602cd12567060241eb97feec",
+      "role": "Frozen actual training-stage configuration; supports LoRA settings and experimental Lean project binding."
+    },
+    {
+      "path": "experiments-2/01-2610/runs/focused-replay/node2-after-r8-v1/train/manifest.json",
+      "sha256": "2b638624ca9a6280457c16f48113c096eb4d84680756dc9511203cd857fc368f",
+      "role": "Frozen actual training-stage configuration; supports LoRA settings and experimental Lean project binding."
+    }
+  ]
+}

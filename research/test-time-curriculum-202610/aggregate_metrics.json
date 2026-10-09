@@ -1,0 +1,147 @@
+{
+  "schema_version": 1,
+  "snapshot_date": "2026-10-09",
+  "status": "Paused after completed curriculum search; no end-to-end target success observed.",
+  "target_id": "aime_1997_p9",
+  "model": {
+    "id": "AI-MO/Kimina-Prover-RL-1.7B",
+    "revision": "1dfd2228afcc35b16eb008a81dfc2b2707750f78"
+  },
+  "generation": {
+    "temperature": 0.6,
+    "top_p": 0.95,
+    "top_k": 20,
+    "max_new_tokens": 24576,
+    "max_model_len": 32768
+  },
+  "wave_size": 4,
+  "lean": {
+    "scope": "Actual experimental verifier runtime, supported by both node setup receipts and experiment manifest project bindings.",
+    "toolchain": "leanprover/lean4:v4.24.0",
+    "lean_commit": "797c613eb9b6d4ec95db23e3e00af9ac6657f24b",
+    "mathlib_revision": "f897ebcf72cd16f89ab4577d0c826cd14afaafc7"
+  },
+  "upstream_lean_context": {
+    "scope": "Release-era/dataset compatibility context recorded in initial model_identity.json; not the runtime used by this experiment.",
+    "toolchain": "leanprover/lean4:v4.15.0",
+    "mathlib_revision": "9837ca9d65d9de6fad1ef4381750ca688774e608"
+  },
+  "adaptation": {
+    "objective": "Supervised cross-entropy on course responses selected from recorded strict student successes, including thinking; prompts masked.",
+    "lora_rank": 16,
+    "lora_alpha": 32,
+    "learning_rate": 5e-05,
+    "steps_per_completed_update": 64,
+    "configuration_audit": "Compared frozen manifests from both initial paths, node1 R8 recovery, and node2 final focused replay.",
+    "failed_reference_ce_attempt": {
+      "path": "node2",
+      "round": 5,
+      "optimizer_steps": 0,
+      "counted_as_completed_update": false,
+      "note": "The stale check-receipt status said passed, but the dense/chunked loss discrepancy caused failure before any optimizer step; terminal evidence governs the count."
+    }
+  },
+  "baseline": {
+    "completed": 128,
+    "strict": 0,
+    "truncated": 95,
+    "natural_unproved": 33,
+    "output_tokens": 2675213
+  },
+  "paths": {
+    "node1": {
+      "completed_updates": 8,
+      "optimizer_steps": 512,
+      "original_target_cumulative_probes": {
+        "started": 64,
+        "unique": 64,
+        "strict": 0,
+        "output_tokens": 1390137,
+        "scope": "Cumulative across evolving checkpoints and supplementary probes; not a final-checkpoint evaluation."
+      },
+      "course_generation": {
+        "started": 800,
+        "completed": 800,
+        "strict": 188,
+        "truncated": 334,
+        "natural_unproved": 278,
+        "output_tokens_durable": 9648349,
+        "unfinished_started": 0
+      },
+      "course_and_target_output_tokens_durable": 11038486,
+      "course_and_target_started_max_output_token_budget": 21233664,
+      "training_response_token_exposures": 1524620,
+      "last_search_only_phase": {
+        "completed": 32,
+        "strict": 0,
+        "truncated": 20,
+        "output_tokens": 535788,
+        "new_updates": 0,
+        "new_original_target_probes": 0
+      }
+    },
+    "node2": {
+      "completed_updates": 8,
+      "optimizer_steps": 512,
+      "original_target_cumulative_probes": {
+        "started": 76,
+        "unique": 76,
+        "strict": 0,
+        "output_tokens": 1726117,
+        "scope": "Cumulative across evolving checkpoints and supplementary probes; not a final-checkpoint evaluation."
+      },
+      "course_generation": {
+        "started": 608,
+        "completed": 606,
+        "strict": 150,
+        "truncated": 269,
+        "natural_unproved": 187,
+        "output_tokens_durable": 7553622,
+        "unfinished_started": 2
+      },
+      "course_and_target_output_tokens_durable": 9279739,
+      "course_and_target_started_max_output_token_budget": 16809984,
+      "training_response_token_exposures": 1546330,
+      "last_search_only_phase": {
+        "completed": 32,
+        "strict": 2,
+        "truncated": 26,
+        "output_tokens": 656267,
+        "new_updates": 0,
+        "new_original_target_probes": 0
+      }
+    }
+  },
+  "descriptive_course_milestone": {
+    "path": "node1",
+    "r8_fl58": {
+      "completed": 16,
+      "strict": 1,
+      "truncated": 3,
+      "natural_unproved": 12
+    },
+    "r8_fl61": {
+      "completed": 16,
+      "strict": 0,
+      "truncated": 8,
+      "natural_unproved": 8
+    },
+    "r9_fl61": {
+      "strict": 1,
+      "truncated": 7,
+      "natural_unproved": 8,
+      "completed": 16
+    },
+    "r8_recovery_optimizer_steps": 64,
+    "r8_fl58_actual_training_exposures": 32,
+    "interpretation": "A local inverse-floor course was solved and replayed before a later connected course was solved. This sequence is not a controlled causal comparison or original-target success."
+  },
+  "cost_scope": {
+    "baseline_excluded_from_path_totals": true,
+    "node2_unfinished_course_output_tokens": null,
+    "node2_unfinished_course_max_output_token_budget": 49152,
+    "tokens_are_not_gpu_hours_or_billing": true,
+    "training_exposures_are_separate_from_generated_tokens": true,
+    "overlapping_wall_clocks_not_summed": true
+  }
+}
